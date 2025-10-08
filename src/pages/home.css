@@ -1,0 +1,72 @@
+/* home.css */
+/* navbar section */
+.icon {
+  margin-right: 10px;
+  border-radius: 10px;
+}
+ul li {
+  padding-inline: 20px;
+}
+.navbar {
+  background-color: var(--navbar-bg);
+}
+.plain-link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.plain-link:hover {
+  background-color: var(--link-hover-bg);
+  border-radius: 10px;
+}
+
+/* body section */
+.header {
+  margin-top: 80px !important;
+}
+.header-text {
+  font-weight: bold;
+}
+.row {
+  background-color: var(--primary-bg);
+}
+
+/* featured products */
+.featuredProduct {
+  padding-left: 5px;
+  padding-bottom: 20px;
+}
+.viewall {
+  margin-right: 40px;
+  border: none;
+  background: none;
+}
+.item-image {
+  color: var(--primary-bg);
+}
+.items {
+  border-radius: 10px;
+  width: 250px;
+  height: 400px;
+}
+.items:hover {
+  box-shadow: 0 0 5px 5px var(--secondary-shadow);
+}
+
+/* contact section */
+.contact-img {
+  border-radius: 10px;
+}
+.contact a {
+  text-decoration: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+/* footer section */
+.footer a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer-social a {
+  padding-inline: 5px;
+}

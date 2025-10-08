@@ -1,0 +1,19 @@
+.full-width-shop-container {
+  background-color: #EEEFE0;
+}
+
+.shop-carts {
+  border-radius: 10px;
+  width: 250px;
+  height: 440px;
+  margin-top: 20px !important;
+}
+
+.shop-carts:hover {
+  box-shadow: 0 0 5px 5px var(--secondary-shadow);
+}
+
+.shop-cart-image {
+  width: 250px;
+  height: 200px;
+}

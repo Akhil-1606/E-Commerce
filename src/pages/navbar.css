@@ -1,0 +1,31 @@
+/* navbar.css */
+.navbar {
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.navbar-text {
+  color: white;
+  font-weight: bold;
+}
+
+ul li {
+  padding-inline: 20px;
+}
+
+.plain-link {
+  text-decoration: none;
+  color: black;
+}
+
+.plain-link:hover {
+  background-color: #D1D8BE;
+  border-radius: 10px;
+}
+
+.icon {
+  margin-right: 10px;
+  border-radius: 10px;
+}

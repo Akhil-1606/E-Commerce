@@ -1,0 +1,6 @@
+/* payment.css */
+.payment-container {
+  max-width: 500px;
+  width: 100%;
+  background-color: var(--primary-bg);
+}

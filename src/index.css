@@ -1,0 +1,31 @@
+/* index.css */
+body {
+  font-family: 'Poppins', sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg: #EEEFE0;
+  --secondary-shadow: #819A91;
+  --text-color: black;
+  --navbar-bg: gray;
+  --link-hover-bg: #D1D8BE;
+}
+
+/* reset but keep Raleway */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit; /* ✅ inherit Raleway */
+}
+
+.full-width-container, body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+.full-width-container {
+  background-color: var(--primary-bg);
+}
