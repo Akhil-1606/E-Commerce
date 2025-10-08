@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './home.css';
 import headerImage from "../assets/image/h-image.png";
-import wirelessCharger from "../assets/image/Charger.png";
+import wirelessCharger from "../assets/image/charger.png";
 import powerBank from "../assets/image/powerBank.png";
 import WirelessEarbuds from "../assets/image/wirelessEarbuds.png";
 import phoneCase from "../assets/image/phoneCase.png";
