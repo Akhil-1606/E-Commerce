@@ -31,7 +31,7 @@ function Home({ addToCart }) {
                     <div className='col-md-6 p-5'>
                         <h1 className='mb-4'>NextGen Accessories</h1>
                         <p>Discover premium-quality ⚡ chargers, 🎧 earbuds, 📱 phone cases, and 🔋 power banks — crafted for style, durability, and performance. Keep your device protected, powered, and always ready 🌍 wherever life takes you.</p>
-                        <button className="btn btn-secondary mt-3" onClick={goToShop}>🛒 Shop Now</button>
+                        <button className="btn btn-secondary mt-3" onClick={goToShop}>Shop Now</button>
 
                     </div>
                     <div className='col-md-6'>
@@ -79,7 +79,6 @@ function Home({ addToCart }) {
                         <img src={map} className='img-fluid contact-img'/>
                     </div>
                     <div className='col-md-1'></div>
-                    <hr />
                 </div>
 
                 {/* Footer section */}

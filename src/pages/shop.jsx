@@ -14,7 +14,7 @@ import selfiestick from "../assets/image/selfieStick.png";
 import usb from "../assets/image/usb-type-c.png";
 import vr from "../assets/image/VR.png";
 
-function Shop({ addToCart, cart }) {  // receive cart as prop
+function Shop({ addToCart, cart }) {
     const featuredProducts = [
         { id: 1, image: wirelessCharger, name: "Wireless Charger", originalPrice: 29.99, offerPrice: 18.99 },
         { id: 2, image: powerBank, name: "Power Bank", originalPrice: 39.99, offerPrice: 29.99 },
@@ -26,10 +26,7 @@ function Shop({ addToCart, cart }) {  // receive cart as prop
         { id: 8, image: grip, name: "Phone Grip", originalPrice: 14.99, offerPrice: 7.99 },
         { id: 9, image: selfiestick, name: "Selfie Stick", originalPrice: 39.99, offerPrice: 24.99 },
         { id: 10, image: usb, name: "Charging Cable", originalPrice: 29.99, offerPrice: 18.99 },
-        { id: 11, image: vr, name: "VR Headset", originalPrice: 149.99, offerPrice: 99.99 },
-        { id: 1, image: wirelessCharger, name: "Wireless Charger", originalPrice: 29.99, offerPrice: 18.99 },
-        { id: 2, image: powerBank, name: "Power Bank", originalPrice: 39.99, offerPrice: 29.99 },
-        { id: 3, image: WirelessEarbuds, name: "Wireless Earbuds", originalPrice: 99.99, offerPrice: 79.99 },
+        { id: 11, image: vr, name: "VR Headset", originalPrice: 149.99, offerPrice: 99.99 }
     ];
 
     const [quantities, setQuantities] = useState(
@@ -58,31 +55,37 @@ function Shop({ addToCart, cart }) {  // receive cart as prop
         <>
             <Navbar />
             <div className="full-width-shop-container">
-                <div className="d-flex flex-wrap justify-content-around">
-                    {featuredProducts.map((product) => (
-                        <div key={product.id} className="shop-carts text-center">
-                            <img className="shop-cart-image mb-3" src={product.image} width={200} height={200} alt={product.name} />
-                            <h3>{product.name}</h3>
-                            <p className="text-muted text-decoration-line-through">${product.originalPrice.toFixed(2)}</p>
-                            <p>${product.offerPrice.toFixed(2)}</p>
+                {featuredProducts.map((product) => (
+                    <div key={product.id} className="shop-carts">
+                        <img className="shop-cart-image" src={product.image} alt={product.name} />
 
-                            <div className="mb-2">
-                                <label>Qty: </label>
+                        <div className="product-info">
+                            <h3>{product.name}</h3>
+
+                            <div className="price-wrapper">
+                                <p className="text-muted">${product.originalPrice.toFixed(2)}</p>
+                                <p>${product.offerPrice.toFixed(2)}</p>
+                            </div>
+
+                            <div className="quantity-wrapper">
+                                <label>Qty:</label>
                                 <input
                                     type="number"
                                     min="1"
                                     value={quantities[product.id]}
                                     onChange={(e) => handleQuantityChange(product.id, e.target.value)}
-                                    style={{ width: '60px', textAlign: 'center' }}
                                 />
                             </div>
-
-                            <button onClick={() => handleAddToCart(product)} className="btn btn-secondary mt-2">
-                                Add to Cart
-                            </button>
                         </div>
-                    ))}
-                </div>
+
+                        <button onClick={() => handleAddToCart(product)} className="btn btn-secondary">
+                            Add to Cart
+                        </button>
+                    </div>
+
+
+
+                ))}
             </div>
         </>
     );

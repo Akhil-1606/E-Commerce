@@ -1,31 +1,31 @@
 /* index.css */
 body {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #FFFFFF; /* ✅ Full white background */
+  color: #22223B;
 }
 
 :root {
-  --primary-bg: #EEEFE0;
-  --secondary-shadow: #819A91;
-  --text-color: black;
-  --navbar-bg: gray;
-  --link-hover-bg: #D1D8BE;
+  --primary-dark: #22223B;
+  --secondary-dark: #4A4E69;
+  --accent: #9A8C98;
+  --soft-contrast: #C9ADA7;
+  --light-bg: #FFFFFF; /* ✅ Everything white */
+  --off-white: #F2E9E4; /* For light hover or subtle contrast */
 }
 
-/* reset but keep Raleway */
 * {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  font-family: inherit; /* ✅ inherit Raleway */
+  font-family: inherit;
 }
 
 .full-width-container, body {
   width: 100vw;
   overflow-x: hidden;
-}
-.full-width-container {
-  background-color: var(--primary-bg);
+  background-color: var(--light-bg);
 }
